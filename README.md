@@ -1,2 +1,2 @@
 # videosaas
-Provides good quality services for learning
+Provides good quality services to learn effectively
