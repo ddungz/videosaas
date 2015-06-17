@@ -14,15 +14,19 @@
 	
 	<mvc:resources mapping="/resources/**" location="/resources/" />
 	<mvc:annotation-driven />
-	
-	<context:annotation-config/>
 
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix"><value>/WEB-INF/pages/</value></property>
 		<property name="suffix"><value>.jsp</value></property>
 	</bean>
 	
-	
+	<bean id="videoDao" class="com.updatingtech.videosaas.daoImpl.VideoDaoImpl"></bean>
+	<bean id="videoService" class="com.updatingtech.videosaas.serviceImpl.VideoServiceImpl">
+	    <property name="videoDao" ref="videoDao"></property>
+	</bean>
+	<bean id="videoController" class="com.updatingtech.videosaas.controller.VideoController">
+	    <property name="videoService" ref="videoService"></property>
+	</bean>
 </beans>
 
 
