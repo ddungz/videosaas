@@ -32,5 +32,9 @@ public class VideoServiceImpl implements VideoService {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	public void setVideoDao(VideoDao videoDao) {
+		this.videoDao = videoDao;
+	}
 
 }
