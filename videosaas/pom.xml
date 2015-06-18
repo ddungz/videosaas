@@ -98,6 +98,12 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- Jackson JSON Mapper -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.10</version>
+		</dependency>		
 	</dependencies>
 	<build>
 		<finalName>videosaas</finalName>
