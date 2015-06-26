@@ -16,6 +16,7 @@
 		<mapping resource="com/updatingtech/videosaas/hibernate/Video.hbn.xml" />
 		<mapping resource="com/updatingtech/videosaas/hibernate/Student.hbn.xml" />
 		<mapping resource="com/updatingtech/videosaas/hibernate/Class.hbn.xml" />
+		<mapping resource="com/updatingtech/videosaas/hibernate/User.hbn.xml" />
 	</session-factory>
 </hibernate-configuration>
 

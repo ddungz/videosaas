@@ -27,6 +27,13 @@
 	<bean id="videoController" class="com.updatingtech.videosaas.controller.VideoController">
 	    <property name="videoService" ref="videoService"></property>
 	</bean>
+	<bean id="userDao" class="com.updatingtech.videosaas.daoImpl.UserDaoImpl"></bean>
+	<bean id="userService" class="com.updatingtech.videosaas.serviceImpl.UserServiceImpl">
+	    <property name="userDao" ref="userDao"></property>
+	</bean>
+	<bean id="userController" class="com.updatingtech.videosaas.controller.UserController">
+	    <property name="userService" ref="userService"></property>
+	</bean>
 </beans>
 
 
