@@ -24,6 +24,7 @@ public class VideoController {
 		log.info("This is the service controller");
 		String videoModel = videoService.getVideoModel(Constant.VIDEO_NAME);
 		modelMap.addAttribute(Constant.VIDEO, videoModel);
+		System.out.print("video variable laf gi day: "+Constant.VIDEO+"\n");
 		return Constant.VIDEO;
 	}
 	

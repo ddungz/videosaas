@@ -11,7 +11,7 @@ public class VideoServiceImpl implements VideoService {
 
 	@Autowired(required=true)
 	private VideoDao videoDao;
-	
+
 	@Override
 	public void insert() {
 		
@@ -30,7 +30,7 @@ public class VideoServiceImpl implements VideoService {
 	@Override
 	public String getVideoModel(String videoModel) {
 		// TODO Auto-generated method stub
-		return null;
+		return videoDao.getVideoModel(videoModel);
 	}
 	
 	public void setVideoDao(VideoDao videoDao) {
