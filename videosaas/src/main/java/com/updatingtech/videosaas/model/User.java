@@ -2,18 +2,47 @@ package com.updatingtech.videosaas.model;
 
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "videoassas")
 public class User {
 
 	private static final long serialVersionUID = 1L;
+	@Id
+	@GeneratedValue
+	@Column(name = "id")
 	private Long id;
+	
+	@Column(name = "user_name")
 	private String userName;
+	
+	@Column(name = "email")
 	private String email;
+	
+	@Column(name = "password")
 	private String password;
+	
+	@Column(name = "user_level")
 	private int userLevel;
+	
+	@Column(name = "age")
 	private String age;
+	
+	@Column(name = "created_date")
 	private Date  createdDate;
+	
+	@Column(name = "update_date")
 	private Date  updatedDate;
+	
+	@Column(name = "class_id")
 	private int classId;
+	
+	@Column(name = "bank_id")
 	private int bankId;
 	
 	
